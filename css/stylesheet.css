@@ -1,0 +1,250 @@
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p, div {
+  margin: 0;
+  padding: 0;
+  font-family: HiraMinProN-W3;
+}
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+.btn,
+a.btn,
+button.btn {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.5;
+  position: relative;
+  display: inline-block;
+  padding: 1rem 4rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  color: #212529;
+  border-radius: 0.5rem;
+}
+
+/*.top-wrapperのcss*/
+.top-wrapper{
+  background-image: url(top-log2.jpg);
+  background-size: cover;
+  height: 900px;
+  color:rgb(226, 220, 220);
+  font-weight: bold;
+  text-align: center;
+  z-index: 10;
+}
+.container{
+  max-width: 1170px;
+  width: 100%;
+  margin:0 auto;
+}
+.container h1{
+  font-size: 42px;
+  letter-spacing: 2px;
+  padding-top: 150px;
+  padding-bottom:50px;
+  opacity: 0.8;
+}
+
+.top-wrapper p{
+  opacity: 0.8;
+  letter-spacing: 2px;
+  font-size: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.contents-text{
+  margin-bottom: 100px;
+}
+
+a.btn--orange {
+  color: #fff;
+  background-color: #c7e06ce7;
+  border-bottom: 5px solid #a5c729;
+}
+a.btn--orange:hover {
+  margin-top: 3px;
+  color: #fff;
+  background: #c3e93b;
+  border-bottom: 2px solid #a5c729;
+}
+a.btn--shadow {
+  -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
+}
+/*modalのcss*/
+.signup-modal-wrapper, .login-modal-wrapper{
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 100;
+}
+
+.modal {
+  position: absolute;
+  top: 20%;
+  left: 34%;
+  background-color: #e6ecf0;
+  padding: 20px 0 40px;
+  border-radius: 10px;
+  width: 450px;
+  height: auto;
+  text-align: center;
+}
+
+.close-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  color: rgba(75, 71, 71, 0.46);
+  cursor: pointer;
+}
+
+#signup-form {
+  width: 100%;
+}
+
+#signup-form h2 {
+  color: #5f5d60;
+  letter-spacing: 1px;
+  margin-bottom: 40px;
+}
+
+#signup-form input {
+  width: 320px;
+  margin-bottom: 20px;
+  font-size: 12px;
+  padding: 12px 12px;
+  border: 1px solid #d0d5d8;
+  border-radius: 5px;
+}
+
+#submit-btn {
+  display: inline-block;
+  padding: 14px 140px;
+  background-color: #5dca88;
+  border: none;
+  border-radius: 3px;
+  color: white;
+  margin: 10px auto;
+  cursor: pointer;
+}
+
+/*真ん中部分のcss*/
+.caption {
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  padding-top: 75px;
+  border-bottom:2px solid rgb(208, 226, 166);
+  opacity: 0.7;
+}
+.contents-item{
+  padding-top: 150px;
+  display: flex;
+  padding-bottom: 20px;
+  width: 100%;
+}
+img{
+  width: 300px;
+  height: auto;
+}
+.contents-opinion{
+  width: 80%;
+  text-align: center;
+}
+.contents-opinion h2{
+  opacity: 0.8;
+  font-size: 34px;
+}
+.contents-opinion p{
+  font-size: 15px;
+  opacity: 0.6;
+}
+
+/*.message-wrapperのcss*/
+.message-wrapper{
+  text-align: center;
+  padding-top: 100px;
+  height: 500px;
+}
+.message-contents{
+  border-top: 2px solid rgb(208, 226, 166);
+}
+.message-contents h2{
+  padding-top: 50px;
+  font-size: 30px;
+  padding-bottom: 80px;
+  opacity: 0.8;
+}
+.message-btn{
+  background-color: #e6fc99e7;
+}
+/*fadein css*/
+.fadein {
+  opacity: 0;
+  transform : translate(0, 50px);
+  transition : all 1500ms;
+}
+
+.fadein.scrollin{
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+/*header css*/
+header{
+  background-color: rgba(71, 73, 73, 0.46);
+  position: fixed;
+  z-index: 11;
+  width: 100%;
+  height: 50px;
+}
+.header-name{
+  padding:12px;
+  font-size: 15px;
+  float: left;
+  display: block;
+  color: white;
+}
+.header-right{
+  float: right;
+  font-size: 14px;
+  background-color: rgba(255,255,255,0.3);
+  transition: 0.5s;
+}
+.header-right:hover{
+  background-color: rgba(255,255,255,0.5);
+}
+.header-right .header-login{
+  line-height: 50px;
+  padding: 0 25px;
+  color: white;
+  cursor: pointer;
+  display: block;
+}
+
+
